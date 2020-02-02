@@ -5,18 +5,29 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass codeplex/sass/main.scss codeplex/dist/css/main.css -w",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
     "scss": "node-sass --watch scss -o css"
   },
   "author": "aman jha",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.8.3",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "popper.js": "^1.14.3"
   },
   "devDependencies": {
-    "webpack": "^4.41.5"
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.2"
   }
 }
