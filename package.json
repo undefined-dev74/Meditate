@@ -1,0 +1,22 @@
+{
+  "name": "xprogym",
+  "version": "1.0.0",
+  "description": "technology emprimises",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass codeplex/sass/main.scss codeplex/dist/css/main.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "aman jha",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5"
+  }
+}

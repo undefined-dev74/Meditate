@@ -1,0 +1,97 @@
+.btn__cta {
+    background-color: #fcddec;
+    color: #EE76AD;
+    font-family: $font-secondary;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #ffbbcc;
+    border-radius: 3rem;
+    padding: 8px 3rem;
+    text-transform: capitalize;
+    transition: all .2s;
+
+    &:focus,
+    &:hover {
+        background-color: $color-grey-light-1;
+        border: 2px solid #fb0091;
+        outline: none;
+    }
+ }
+
+ .cards_btn {
+    text-decoration: none;
+    border: none;
+    align-self: start;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-radius: .5rem;
+    background-image: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+    color: #000000;
+    font-family: $font-prize;
+    position: relative;
+    overflow: hidden;
+    
+
+    & > * {
+        height: 100%;
+        width: 100%;
+        transition: all .2s;
+        display: inline-block;
+
+    }
+
+    &-visible {
+        padding: 1rem 3rem;
+    }
+
+    &-invisible {
+        padding: 1rem 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+       
+        .btn-icon {
+            height: 2rem;
+            width: 2rem;
+            fill: #000000;
+        }
+    }
+
+    &:focus::before {
+     background-image: linear-gradient(100deg, #f7395f 0%, #fe702e 100%);
+      opacity: 1;
+      transform: translateX(100%);
+      width: 100%;
+      transform-origin: right;
+      border-end-end-radius: 100px;
+      display: inline-block;
+
+    }
+
+    &:hover &-visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &-invisible {
+        top: 0;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &::before {
+        content: "";
+        height: 100%;
+        display: block;
+        background-color: #ed1250;
+        width: 1%;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: all 2s .3s;
+    }
+}

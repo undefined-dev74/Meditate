@@ -1,0 +1,27 @@
+// ----------- Abstracts Section ------------
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// ----------- Base Section      -------------
+@import "base/animation" ;
+@import "base/base" ;
+@import "base/typography" ;
+@import "base/utilities" ;
+
+// ------------ Components Section ------------
+
+@import "components/button" ;
+//-----------  Layouts Section --------------
+@import "layouts/navbar" ;
+@import "layouts/header" ;
+@import "layouts/features" ;
+@import "layouts/story" ;
+@import "layouts/gallery" ;
+@import "layouts/explores" ;
+@import "layouts/footer" ;
+
+
+//custom bootstrap 
+
+@import "../scss/custom.scss" ;
