@@ -1,6 +1,6 @@
 // ----------- Abstracts Section ------------
 @import "abstracts/functions";
-@import "abstracts/mixins";
+@import "abstracts/mixin";
 @import "abstracts/variables";
 
 // ----------- Base Section      -------------
@@ -24,4 +24,4 @@
 
 //custom bootstrap 
 
-@import "../scss/custom.scss" ;
+@import "custom.scss" ;
