@@ -1,0 +1,46 @@
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em ;   //1200px/16(which is default font size for html) = 75em
+$bp-large  : 62.5em;  //1000px
+$bp-medium : 43.75em; //700px
+$bp-small  : 31.25em; //500px
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+html{
+    
+    box-sizing: border-box; 
+    font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
+
+    @media only screen and(max-width: $bp-largest){
+        font-size: 50%;
+    }
+
+    @media only screen and(max-width: $bp-large) {
+        font-size: 43.75%;
+    }
+
+    @media only screen and(max-width: $bp-medium) {
+        font-size: 31.25%;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+        font-size: 18.75%;
+    }
+}
+
+body{
+    // padding: 1rem;
+    // background-color: #3c4245;
+}
+
+
