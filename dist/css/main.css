@@ -97,7 +97,11 @@ html {
     color: #ff3366; }
 
 .sub-heading {
+<<<<<<< HEAD
   font-family: "Open Sans";
+=======
+  font-family: "Josefin Sans", Sens-serif;
+>>>>>>> e848c0b388c29c39a004e22a5b28968403e82e8c
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;

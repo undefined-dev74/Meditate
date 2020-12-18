@@ -1,0 +1,44 @@
+
+/* -------begin customization-------- */   
+/*! `Custom` Bootstrap 4 theme */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700);
+$font-family-base:Montserrat;
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,700);
+$headings-font-family:Poppins;
+
+$enable-grid-classes:true;
+$primary:#FF304F;
+$secondary:#303030;
+$success:#015668;
+$danger:#FF304F;
+$info:#0F81C7;
+$warning:#0DE2EA;
+$light:#e8e8e8;
+$dark:#020202;
+$spacer:1rem;
+$border-width:1px;
+$btn-border-radius:.25rem;
+
+// $body-bg:  #3c4245;
+
+
+
+
+/* -------end customization-------- */   
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+// @import "../node_modules/bootstrap/scss/navbar" ;
+// @import "../node_modules/bootstrap/scss/reboot" ;
+// @import "../node_modules/bootstrap/scss/type" ;
+// @import "../node_modules/bootstrap/scss/images" ;
+// @import "../node_modules/bootstrap/scss/code" ;
+// @import "../node_modules/bootstrap/scss/grid" ;
+// @import "../node_modules/bootstrap/scss/utilities" ;
+// @import "../node_modules/bootstrap/scss/transitions" ;
+

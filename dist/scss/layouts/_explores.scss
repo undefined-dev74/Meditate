@@ -1,0 +1,126 @@
+.explores {
+    // min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    justify-items: center;
+    grid-gap: 0 6rem;
+    margin: 10rem 5rem;
+
+    @media only screen and(max-width: $bp-small) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        
+    }
+
+}
+
+    .cards_heading {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin: 5rem 0;
+         
+        @media only screen and(max-width: $bp-small) {
+            margin: 2.5rem 0;
+        }
+
+    }
+
+    .cards {
+        display: grid;
+        position: relative;
+        min-width: 0;
+        height: 50rem;
+        width: 25rem;
+        background-image: linear-gradient(240deg, #29242c 10%, #443847 100%);
+        align-items: center;
+        justify-items: center;
+        border-radius: 1.5rem;
+        box-shadow: $shadow-light;
+        font-family: $font-display;
+        color: #f4f5f5;
+         
+        @media only screen and(max-width: $bp-small) {
+           height: 40rem;
+           width: 22rem;
+        }
+
+        
+        &_title {
+            align-self: end;
+            &-header {
+                font-family: $font-heading;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 400;
+                letter-spacing: 2px;
+            }  
+        }
+        
+        &_price {
+            align-self: start;
+            display: block;
+            width: 100%;
+            height: 10rem;
+            background-image: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+            text-align: center;
+
+            
+            @media only screen and(max-width: $bp-small) {
+                display: flex;
+                justify-content: center;
+            }
+
+        
+            &-amount {
+                transform: translate(0, 60%);
+                font-family: $font-prize;
+                color: #000000;
+                font-size: 3.5rem;
+                 
+            @media only screen and(max-width: $bp-small) {
+               transform: translate(0, 40%);
+               font-size: 4rem;
+            }
+
+
+                span {
+                    font-size: 1.8rem;
+                    margin: 0 2px;
+                }
+            }
+        }
+        
+        &_lists {
+            box-sizing: border-box;
+            margin-bottom: 0;
+            li {
+                list-style: none;
+                text-decoration: none;
+            }
+
+            &-item {
+                font-size: 1.4rem;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                border-bottom: solid;
+                border-bottom-width: 0.8px;
+                border-image: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+                text-align: center;
+                margin-bottom: 1rem;
+               
+                &:not(:first-child) {
+                    margin-top: 1.3rem;
+                }
+            }
+        }
+        &_trial,
+        &_trial:link,
+        &_trial:visited {
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            align-self: end;
+            margin-bottom: 5px;
+        }
+    }

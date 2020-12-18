@@ -1,0 +1,84 @@
+
+.navbar {
+    text-transform: uppercase;
+    border: 2px solid $navbar-text;
+    
+    .navbar-brand {
+        font-family: $font-display;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: $navbar-text !important;
+
+        &_sub {
+            color: #eaeff0;
+            margin-left: 2px;
+
+        }
+    }
+    
+    .navbar-nav {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-left: 1.3rem;
+        list-style: none;
+        
+        .nav-item {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            .nav-link,
+            .nav-link::before,
+            .nav-link::after{
+                transition: transform .3s,
+                width .3s;
+
+            }            
+
+            .nav-link::after{
+                position: absolute;
+                content: ".";
+                display: inline-block;
+                color: transparent;
+                text-align: center;
+                background-color: #4dd498;
+                height: 1px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 0%;
+                margin: auto;
+                
+            }
+
+            .nav-link:hover::after {
+                width: 100%;
+                transform: scaleX(1);
+
+            }
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+            
+            .nav-link:link,
+            .nav-link:visited {
+                color: $navbar-text;
+                text-decoration: none;
+                display: block;
+                padding: .5rem 1rem;
+                letter-spacing: 1px;
+            } 
+            
+            // .nav-link:hover,
+            // .nav-link:active {
+            //     color: #eaeff0;
+            // } 
+        }        
+    }
+   
+}
+
+#navbar-bg {
+    background-color: $navbar-bg !important ;
+}

@@ -1,0 +1,54 @@
+.glow {
+    animation: fadeIn 3s cubic-bezier(.54,.13,.53,.87);
+    transition: all 2s ;
+    overflow: visible;
+    backface-visibility: hidden;
+}
+
+.slidetoright {
+    animation: slide 2s cubic-bezier(.83,.16,.15,.89) 1s;
+    transition: slide 2s;
+    backface-visibility: hidden;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes fadeIn {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-10px) ;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
